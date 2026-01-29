@@ -14,17 +14,27 @@ export default function SnakeGame() {
   const [score, setScore] = useState(0);
   const [dead, setDead] = useState(false);
 
-  // Load images
-  const bgImg = useRef<HTMLImageElement>(new Image());
-  const snakeImg = useRef<HTMLImageElement>(new Image());
-  const coinImg = useRef<HTMLImageElement>(new Image());
-  const bombImg = useRef<HTMLImageElement>(new Image());
+  // Refs untuk gambar
+  const bgImg = useRef<HTMLImageElement | null>(null);
+  const snakeImg = useRef<HTMLImageElement | null>(null);
+  const coinImg = useRef<HTMLImageElement | null>(null);
+  const bombImg = useRef<HTMLImageElement | null>(null);
 
+  // Load gambar hanya di client
   useEffect(() => {
-    bgImg.current.src = "/background.png";
-    snakeImg.current.src = "/snake.png";
-    coinImg.current.src = "/coin.png";
-    bombImg.current.src = "/bomb.png";
+    if (typeof window !== "undefined") {
+      bgImg.current = new Image();
+      bgImg.current.src = "/background.png";
+
+      snakeImg.current = new Image();
+      snakeImg.current.src = "/snake.png";
+
+      coinImg.current = new Image();
+      coinImg.current.src = "/coin.png";
+
+      bombImg.current = new Image();
+      bombImg.current.src = "/bomb.png";
+    }
   }, []);
 
   // Keyboard controls
@@ -89,18 +99,29 @@ export default function SnakeGame() {
     if (!ctx) return;
 
     // Background
-    ctx.drawImage(bgImg.current, 0, 0, WIDTH, HEIGHT);
+    if (bgImg.current) {
+      ctx.drawImage(bgImg.current, 0, 0, WIDTH, HEIGHT);
+    } else {
+      ctx.fillStyle = "black";
+      ctx.fillRect(0, 0, WIDTH, HEIGHT);
+    }
 
     // Snake
-    snake.forEach((seg) => {
-      ctx.drawImage(snakeImg.current, seg.x * GRID, seg.y * GRID, GRID, GRID);
-    });
+    if (snakeImg.current) {
+      snake.forEach((seg) => {
+        ctx.drawImage(snakeImg.current!, seg.x * GRID, seg.y * GRID, GRID, GRID);
+      });
+    }
 
     // Coin
-    ctx.drawImage(coinImg.current, coin.x * GRID, coin.y * GRID, GRID, GRID);
+    if (coinImg.current) {
+      ctx.drawImage(coinImg.current, coin.x * GRID, coin.y * GRID, GRID, GRID);
+    }
 
     // Bomb
-    ctx.drawImage(bombImg.current, bomb.x * GRID, bomb.y * GRID, GRID, GRID);
+    if (bombImg.current) {
+      ctx.drawImage(bombImg.current, bomb.x * GRID, bomb.y * GRID, GRID, GRID);
+    }
   }, [snake, coin, bomb]);
 
   return (
