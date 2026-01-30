@@ -1,15 +1,16 @@
-{
-  "miniapp": {
-    "name": "Snake Pixel",
-    "description": "Classic Snake game in pixel-art style. Eat coins, avoid bombs, and survive!",
-    "url": "https://snake-go-one.vercel.app",
-    "icon": "https://snake-go-one.vercel.app/icon.png",
-    "screenshots": [
-      "https://snake-go-one.vercel.app/screenshot.png"
-    ],
-    "developer": {
-      "name": "pasifista",
-      "url": "https://farcaster.xyz/pasifista"
+{ "miniapp": { 
+  "name": "Snake Pixel", 
+  "description": "Classic Snake game in pixel-art style. Eat coins, avoid bombs, and survive!", 
+  "url": "https://snake-go-one.vercel.app", 
+  "icon": "https://snake-go-one.vercel.app/icon.png", 
+  "screenshots": [ 
+    "https://snake-go-one.vercel.app/screenshot.png" 
+    ], 
+    "splashImageUrl": "https://snake-go-one.vercel.app/background.png", 
+    "splashBackgroundColor": "#0077D4", 
+    "developer": { 
+      "name": "pasifista", 
+      "url": "https://farcaster.xyz/pasifista" 
     }
   },
   "accountAssociation": {
