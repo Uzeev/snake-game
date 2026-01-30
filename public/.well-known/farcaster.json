@@ -1,21 +1,35 @@
-{ "miniapp": { 
-  "name": "Snake Pixel", 
-  "description": "Classic Snake game in pixel-art style. Eat coins, avoid bombs, and survive!", 
-  "url": "https://snake-go-one.vercel.app", 
-  "icon": "https://snake-go-one.vercel.app/icon.png", 
-  "screenshots": [ 
-    "https://snake-go-one.vercel.app/screenshot.png" 
-    ], 
-    "splashImageUrl": "https://snake-go-one.vercel.app/background.png", 
-    "splashBackgroundColor": "#0077D4", 
-    "developer": { 
-      "name": "pasifista", 
-      "url": "https://farcaster.xyz/pasifista" 
-    }
+{
+  "frame": {
+    "name": "Snake Pixel",
+    "version": "1",
+    "iconUrl": "https://https://snake-game-one-psi.vercel.app/icon.png",
+    "homeUrl": "https://https://snake-game-one-psi.vercel.app",
+    "imageUrl": "https://https://snake-game-one-psi.vercel.app/screenshot.png",
+    "buttonTitle": "Open Mini App",
+    "splashImageUrl": "https://https://snake-game-one-psi.vercel.app/bcakground.png",
+    "splashBackgroundColor": "#0077D4",
+    "webhookUrl": "https://https://snake-game-one-psi.vercel.app/api/webhook",
+    "subtitle": "Play For Fun",
+    "description": "Classic Snake game in pixel-art style. Eat coins, avoid bombs, and survive!",
+    "screenshotUrls": [
+      "https://https://snake-game-one-psi.vercel.app/screenshot.png"
+    ],
+    "primaryCategory": "games",
+    "tags": [
+      "game",
+      "fungame",
+      "miniapp",
+      "retrogame",
+      "snakegame"
+    ],
+    "heroImageUrl": "https://https://snake-game-one-psi.vercel.app/snake.png",
+    "tagline": "Eat Coin And Survive!",
+    "ogTitle": "AppName - Snake Pixel",
+    "ogDescription": "Let's Play For Fun!"
   },
   "accountAssociation": {
-    "header": "eyJmaWQiOi0xLCJ0eXBlIjoiYXV0aCIsImtleSI6IjB4MjQyQjk5REU1NTQ1QzU4RmQxODcxMkQxMkNjMTEyZTI0OTNiMjU2MSJ9",
-    "payload": "eyJkb21haW4iOiJzbmFrZS1nYW1lLW9uZS1wc2kudmVyY2VsLmFwcCJ9",
-    "signature": "AAAAAAAAAAAAAAAAyhG94Fl3s2MRZwKIYr4qFzl2yhEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkSCrVbLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAC6XtDGqoxJA4-Bnlh-JjPEqfQooAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVQ_-6NvAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAyeABsnSEtmN--8SQI2_cdO0LG1UfUgOlCU686myPJbJNPYin5M-doOw3-CrH2MviCdw3kZijMGL2zm_vCX57OQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA-FIQshzFAwL0d7pWaG0gGdybZ63hWwqMROytRWUz0BEOrSzgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABiFNp_T2dvOE2ibe-v9A4Vtr-N359D0EJr3lMS5XZ4UpQDY57JPfrnnBUelp1IVyXZPUyFf3thp9rW4DnIXJenQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAl8ZgIay2xclZzG8RWZzuWvO8j9R0fus3XxDee9lRlVy8dAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACKeyJ0eXBlIjoid2ViYXV0aG4uZ2V0IiwiY2hhbGxlbmdlIjoiUzBGS2dDNXpOdkp3QXd1cHpjSkxyWmdLZ0J5SW14Qm1Bc0hGS1Y4b24wQSIsIm9yaWdpbiI6Imh0dHBzOi8va2V5cy5jb2luYmFzZS5jb20iLCJjcm9zc09yaWdpbiI6ZmFsc2V9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAGSSZJJkkmSSZJJkkmSSZJJkkmSSZJJkkmSSZJJkkmSS"
+    "header": "eyJmaWQiOjg2NjQ4NywidHlwZSI6ImF1dGgiLCJrZXkiOiIweDIwMjM5MTE5NmE4RmYxQTAyNDZEY0UxNTMyQmRlZDdlRUJGYkE4ZDAifQ",
+    "payload": "eyJkb21haW4iOiJodHRwczovL3NuYWtlLWdhbWUtb25lLXBzaS52ZXJjZWwuYXBwIn0",
+    "signature": "amP5r1MM4KNfuiC7dusBrWpMZiBqjoEHryZ5bnzeXg8uxndn1xIKH6YD2aVUAJ5bZCsSiAmluxJXfpqppo+joBs="
   }
 }
